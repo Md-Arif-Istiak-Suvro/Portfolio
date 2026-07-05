@@ -1,26 +1,81 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --background: #1A0D08; /* Luxury Dark Chocolate based on image_653ac3.png */
+  --foreground: #f5f0eb;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #1A0D08;
     --foreground: #ededed;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #1A0D08 !important; /* Full portfolio background update */
+  color: #f5f0eb !important;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ==========================================================================
+   ULTIMATE DARK MODE CONTRAST OVERRIDES
+   ========================================================================== */
+
+/* 1. Target all structural tags and explicitly force them to white */
+body h1, body h2, body h3, body h4, body h5, body h6, 
+body p, body span, body li, body a, body div {
+  color: #ffffff !important;
+  text-shadow: none !important;
+}
+
+/* 2. Overpower inline Tailwind configurations for dark texts */
+*[class*="text-[#111111]"], 
+*[class*="text-black"], 
+*[class*="text-neutral-"], 
+*[class*="text-zinc-"], 
+*[class*="text-gray-"] {
+  color: #ffffff !important;
+}
+
+/* 3. Give descriptions and paragraphs a clean, readable silver look */
+body p, *[class*="text-[#111111]/70"], *[class*="text-[#111111]/80"] {
+  color: #e4e4e7 !important;
+}
+
+/* 4. KEEP THE ACCENTS: Protect your beautiful orange brand highlights */
+*[class*="text-[#FF5E00]"], 
+*[class*="text-orange-"],
+body .text-brand {
+  color: #FF5E00 !important;
+}
+
+/* ==========================================================================
+   INFINITE MARQUEE FLOW ANIMATION
+   ========================================================================== */
+.animate-marquee {
+  display: inline-flex;
+  animation: marqueeFlow 25s linear infinite;
+}
+
+@keyframes marqueeFlow {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ========================================================================== 
+   LIGHT PREMIUM MOUSE EFFECT FIX (ULTRA MISTY / ALMOST INVISIBLE)
+   ========================================================================== */ 
+div[class*="pointer-events-none"] > div[class*="bg-"], 
+div[class*="pointer-events-none"] > div[class*="bg-[#FF5E00]"], 
+.custom-cursor, 
+.cursor-follower { 
+  background-color: rgba(255, 160, 100, 0.03) !important; 
+  border-color: rgba(255, 210, 170, 0.08) !important;   
+  backdrop-filter: blur(2px); 
+  box-shadow: 0 0 40px rgba(255, 140, 50, 0.04) !important;  
 }
