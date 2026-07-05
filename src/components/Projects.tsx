@@ -37,7 +37,7 @@ const projectsCollection: Project[] = [
     stack: ["Next.js", "TypeScript", "Tailwind CSS"],
     gitLink: "https://github.com/Md-Arif-Istiak-Suvro/Islamic-Land-Management-System",
     liveLink: "#",
-    image: "/images/Project2.png"
+    image: "/images/Project2 (2).png"
   },
  
 ];
