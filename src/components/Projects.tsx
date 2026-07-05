@@ -34,9 +34,10 @@ const projectsCollection: Project[] = [
     title: "Premium Hostel Automation Platform",
     category: "web",
     desc: "A production-grade facility management dashboard featuring deep analytical metrics tracking, real-time user-to-admin secure credential flows, and cross-platform verification frameworks.",
-    stack: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
-    gitLink: "##",
-    liveLink: "#"
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    gitLink: "https://github.com/Md-Arif-Istiak-Suvro/Islamic-Land-Management-System",
+    liveLink: "#",
+    image: "/images/Project2.png"
   },
  
 ];
