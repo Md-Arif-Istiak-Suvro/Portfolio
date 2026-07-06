@@ -79,3 +79,22 @@ div[class*="pointer-events-none"] > div[class*="bg-[#FF5E00]"],
   backdrop-filter: blur(2px); 
   box-shadow: 0 0 40px rgba(255, 140, 50, 0.04) !important;  
 }
+/* ==========================================================================
+   MOBILE MENU OVERRIDE (CHOCOLATE BLACK BACKGROUND & WHITE WORDS)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Targets the active mobile menu drawer layout container */
+  div[class*="fixed"][class*="top-"],
+  div[class*="absolute"][class*="top-"],
+  nav div[class*="bg-"] {
+    background-color: #1A0D08 !important; /* Luxury Chocolate Black base */
+  }
+
+  /* Ensures all navigation link items inside the mobile menu pop cleanly in crisp white */
+  div[class*="fixed"] a,
+  div[class*="absolute"] a,
+  div[class*="fixed"] button,
+  div[class*="absolute"] button {
+    color: #ffffff !important;
+  }
+}
