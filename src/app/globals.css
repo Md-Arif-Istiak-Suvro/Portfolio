@@ -97,4 +97,5 @@ div[class*="pointer-events-none"] > div[class*="bg-[#FF5E00]"],
   div[class*="absolute"] button {
     color: #ffffff !important;
   }
+  
 }
