@@ -118,7 +118,7 @@ export default function Hero() {
             <a href="#contact">
               <Button variant="primary">Hire Me</Button>
             </a>
-            <a href="/resume.pdf" download>
+            <a href="/images/resume.pdf" download>
               <Button variant="secondary">Download Resume</Button>
             </a>
           </div>
